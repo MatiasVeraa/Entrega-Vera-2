@@ -1,0 +1,116 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: #f8f8f8; /* opcional */
+  
+}
+
+.cart-container {
+  display: flex;  /* Utilizamos flexbox para alinear los elementos */
+  align-items: center;  /* Centra verticalmente los elementos dentro del contenedor */
+  position: relative;  /* Asegura que la burbuja esté alineada con el carrito */
+}
+
+.cartwidget-logo {
+  width: 40px;
+  height: auto;
+}
+
+.burbuja {
+  width: 20px;
+  height: 20px;
+  background-color: burlywood;
+  border-radius: 50%;  /* Asegura que la burbuja sea redonda */
+  display: flex;
+  align-items: center;  /* Centra el texto verticalmente */
+  justify-content: center;  /* Centra el texto horizontalmente */
+  margin-left: -10px;  /* Ajusta la distancia de la burbuja hacia la izquierda del carrito */
+}
+
+.cantidad {
+  color: black;
+  font-size: 12px;  /* Ajusta el tamaño del texto dentro de la burbuja */
+  margin: 0;  /* Elimina márgenes automáticos */
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap; /* si querés que se acomoden cuando no entra todo */
+  background-color: #ffffff; /* opcional */
+}
+
+.navbar > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* espacio entre elementos */
+
+
+}
+.logo {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* EN EL ARCHIVO NAVBAR.jsx*/
+
+.nav-container {
+  display: flex;
+  align-items: center; /* Centra todo verticalmente */
+  justify-content: space-between;
+  height: 60px; /* Mantiene el navbar compacto */
+  padding: 5px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: auto; /* Mantiene la proporción */
+  width: 120px; /* Ajusta según prefieras */
+  max-height: 60px; /* Evita que se estire demasiado */
+  object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Espacio entre los links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
